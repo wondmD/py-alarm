@@ -85,13 +85,13 @@ def alarm():
         alarm_hour =hour_box.get()
         alarm_min = min_box.get()
         alarm_sec = sec_box.get()
-
+        alarm_per = ""
         now = datetime.now()
         print (now)
         time_hour = now.strftime("%I")
         time_min = now.strftime("%M")
         time_sec = now.strftime("%S")
-        
+        time_per = ""
 
         if check_val == 1:
             if alarm_per == time_per:
